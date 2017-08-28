@@ -14,9 +14,11 @@ The goals / steps of this project are the following:
 [image1]: ./examples/car.png
 [image2]: ./examples/notcar.png
 [image3]: ./examples/HOG_examples_channel_0.jpg
-[image4]: ./examples/test_classifier.jpg
-[image5]: ./examples/heatmap.jpg
-[image6]: ./examples/example.jpg
+[image4]: ./examples/hot_windows.jpg
+[image5]: ./examples/windows.jpg
+[image6]: ./examples/test_classifier.jpg
+[image7]: ./examples/heatmap.jpg
+[image8]: ./examples/example.jpg
 [video1]: ./project_video_output.mp4
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/513/view) Points
@@ -82,7 +84,9 @@ I used three different window size listed below:
 
 Here are some example images:
 
-![Output image from pipeline][image4]
+![Windows][image5]
+![Found windows][image4]
+![Output image from pipeline][image6]
 ---
 
 ### Video Implementation
@@ -99,13 +103,13 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 ### Here is an example frame and its corresponding heatmaps:
 
-![alt text][image6]
+![Original image][image8]
 
 ### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap:
-![alt text][image5]
+![Heatmap][image7]
 
 ### Here are the resulting bounding boxes are drawn onto this frame:
-![alt text][image4]
+![Final result][image4]
 
 
 
