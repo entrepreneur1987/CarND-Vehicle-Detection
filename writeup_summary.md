@@ -13,7 +13,7 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 [image1]: ./examples/car.png
 [image2]: ./examples/notcar.png
-[image3]: ./examples/HOG_examples_channel_0.jpg
+[image3]: ./examples/HOG_examples_channel_0.png
 [image4]: ./examples/hot_windows.jpg
 [image5]: ./examples/windows.jpg
 [image6]: ./examples/test_classifier.jpg
@@ -46,7 +46,7 @@ I then explored different color spaces and different `skimage.hog()` parameters 
 Here is an example using the `YUV` color space and HOG parameters of `orientations=9`, `pixels_per_cell=(16, 16)` and `cells_per_block=(2, 2)`:
 
 
-![alt text][image3]
+![HOG][image3]
 
 #### 2. Explain how you settled on your final choice of HOG parameters.
 
@@ -102,10 +102,7 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 ### Here is an example frame and its corresponding heatmaps:
 
-![Original image][image8]
-
-### Here is the output of `scipy.ndimage.measurements.label()` on the integrated heatmap:
-![Heatmap][image7]
+![Original image][image8]![Heatmap][image7]
 
 ### Here are the resulting bounding boxes are drawn onto this frame:
 ![Final result][image4]
