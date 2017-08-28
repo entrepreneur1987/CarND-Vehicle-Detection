@@ -1,5 +1,5 @@
 
-** Vehicle Detection Project **
+**Vehicle Detection Project**
 
 The goals / steps of this project are the following:
 
@@ -33,7 +33,7 @@ You're reading it!
 
 ### Histogram of Oriented Gradients (HOG)
 
-####1. Explain how (and identify where in your code) you extracted HOG features from the training images.
+#### 1. Explain how (and identify where in your code) you extracted HOG features from the training images.
 
 The code for this step is contained in the first code cell of the IPython notebook (or in lines # through # of the file called `some_file.py`).  
 
@@ -52,6 +52,7 @@ Here is an example using the `YUV` color space and HOG parameters of `orientatio
 
 I tried various combinations of parameters, including include color histogram/spatial binning or HOG alone, and different params for HOG. I found out that color histogram/spatial binning doesn't help much in the final result. I tried many different combinations and here are my final choices:
 
+```
 orientations = 11  # HOG orientations
 pixels_per_cell = 16 # HOG pixels per cell
 cells_per_block = 2 # HOG cells per block
@@ -62,6 +63,7 @@ cspace = 'YUV'
 extract_bin_spatial=False
 extract_hog=True
 extract_color_hist=False
+```
 
 #### 3. Describe how (and identify where in your code) you trained a classifier using your selected HOG features (and color features if you used them).
 
@@ -83,10 +85,7 @@ I used three different window size listed below:
 #### 2. Show some examples of test images to demonstrate how your pipeline is working.  What did you do to optimize the performance of your classifier?
 
 Here are some example images:
-
-![Windows][image5]
-![Found windows][image4]
-![Output image from pipeline][image6]
+![Windows][image5]![Found windows][image4]![Output image from pipeline][image6]
 ---
 
 ### Video Implementation
